@@ -28,7 +28,7 @@ app.post('/geturl', async (req, res) => {
 	res.status(201).json({ result })
 })
 
-app.get('/:id', async (req, res) => {
+app.get('/geturl/:id', async (req, res) => {
 	const code = req.params.id
 
 	const result = await db.fetch({ code })
