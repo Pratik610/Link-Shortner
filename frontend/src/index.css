@@ -6,7 +6,8 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: white;
 }
-.form-data {
+
+h1 {
 	margin-top: 20vh;
 }
 .form-data input {

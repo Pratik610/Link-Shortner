@@ -28,17 +28,19 @@ app.post('/geturl', async (req, res) => {
 	res.status(201).json({ result })
 })
 
-app.get('/geturl/:id', async (req, res) => {
+app.get('/:id', async (req, res) => {
 	const code = req.params.id
 
 	const result = await db.fetch({ code })
+	console.log(result)
+	res.redirect(`${result.items[0].url}`)
 
-	if (result) {
-		res.status(201).json({ result })
-	} else {
-		res.status(404)
-		throw new Error('Not Found')
-	}
+	// if (result) {
+	// 	res.status(201).json({ result })
+	// } else {
+	// 	res.status(404)
+	// 	throw new Error('Not Found')
+	// }
 })
 
 const __dirname = path.resolve()
