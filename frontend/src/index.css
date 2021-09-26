@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+	background-color: #00171f;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+.form-data {
+	margin-top: 20vh;
+}
+.form-data input {
+	background-color: #012029;
+	color: white;
+	border: 1px solid #00a8e8;
+}
+.form-data input:focus {
+	background-color: #012029;
+	color: white;
+}
+.form-data p {
+	color: #00a8e8;
+}
+
+.copy-link input:disabled {
+	background-color: #012029;
+	color: white;
+	border: 1px solid #00a8e8;
+}
